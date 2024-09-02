@@ -7,10 +7,49 @@
 </head>
 <body>
     <form action=""> <!--a donde irá lo que el usuario digite-->
-        <label for="">
+        <label for="nombre"> <!--etiqueta necesaria para marcar lo que se requiere (si no entiendes entra a w3schools.com)-->
             <span>¿Cuál es tu nombre?</span> <!--pregunta lo que quieras saber del usuario-->
-            <input type="text"> <!--espacio donde el usuario coloca la informacion-->
+            <input type="text" id="nombre" placeholder="Pon aquí tu nombre..." autocomplete="name" required> <!--espacio donde el usuario coloca la informacion, (autocomplete es para llenar el nombre con palabras predeterminadas), {required es texto requerido, obligatorio}-->
         </label>
-    </form> 
+        <label for="fecha"> 
+            <span>¿Cuándo es tu cumpleaños?</span> 
+            <input type="date" id="fecha"> 
+        </label>
+        <label for="hora"> 
+            <span>¿Cuál es tu hora favorita del día?</span> 
+            <input type="time" id="hora" step="1800"> <!-- step="3600" para permitir solo horas -->
+        </label>
+        <label for="periodo"> 
+            <select id="periodo">
+                <option value="AM">A.M.</option>
+                <option value="PM">P.M.</option>
+            </select>
+        </label>
+        <label for="correo">
+            <span>¿Cuál es tu correo?</span>
+            <input type="email" name="correo" id="correo" placeholder="nombre@mail.com"> <!--atributos para CSS, facilidad para el futuro-->
+        </label>  
+        <label for="edad">
+            <span>¿Eres mayor de edad?</span>
+            <input type="checkbox" name="edad" id="edad">
+        </label>
+        <label for="semana">
+            <span>Semana:</span>
+            <input type="week" name="semana" id="semana">
+        </label>
+        <label for="mes">
+            <span>Mes:</span>
+            <input type="month" name="mes" id="mes">
+        </label>
+        <input type="submit" value="Send">
+    </form>
+    <main>
+        <form action="">
+            <label for="calendario">
+                <span>Calendario</span>
+                <input type="datetime-local" name="calendario" id="calendario">
+            </label>
+        </form>
+    </main>
 </body>
 </html>
