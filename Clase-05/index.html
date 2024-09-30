@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="nombre">
+            <span>¿Cuál es tu nombre?</span>
+            <input type="text" name="nombre" id="nombre">
+        </label>
+        <label for="nacimiento">
+            <span>¿Cuándo naciste?</span>
+            <input type="date" name="nacimiento" id="nacimiento">
+        </label>
+        <label for="Correo">
+            <span>¿Cuál es tu correo?</span>
+            <input type="email" name="Correo" id="Correo">
+        </label>
+        <label for="fecha-1">
+            <span>¿Cuándo y a qué hora naciste?</span>
+            <input type="datetime-local" name="fecha-1" id="fecha-1">
+        </label>
+        <label for="cars">
+            <span>Elige un carro:</span> <!--aqui se pregunta-->
+            <select name="cars" id="cars">
+                <option value="volvo">Volvo</option>
+                <option value="bmw">BMW</option>
+                <option value="mercedes">Mercedes</option><!--aqui van las opciones-->
+                <option value="audi">Audi</option>
+            </select>
+        </label>
+        <label for="Frutas">
+            <span>Elige una fruta:</span> <!--aqui se pregunta-->
+            <select name="fruta" id="fruta">
+                <option value="mango">mango</option>
+                <option value="manzana">manzana</option>
+                <option value="pera">pera</option>
+                <option value="piña">piña</option>
+            </select>
+        </label>
+        <label for="metodos de transporte">
+            <span>Elige un metodo de transporte</span>
+            <select name="metodos de transporte" id="metodos de transporte">
+                <option value="Caminar">Caminar</option>
+                <option value="En carro">En carro</option>
+                <option value="En bicicleta">En bicicleta</option>
+            </select>
+        </label>
+        <label for="cars2">
+            <span>Elige un carro 2:</span>
+            <input list="cars2"><!--se escribe aquí para que sañga una lista desplegable-->
+                <datalist id="cars2">
+                    <option value="Volvo">
+                    <option value="BMW">
+                    <option value="Mercedes">
+                    <option value="Audi">
+                </datalist>
+        </label>
+        <input type="submit" name="enviar" id="enviar">
+    </form>
+    <input type="button" value="!Haz click aquí¡">
+</body>
+</html>
